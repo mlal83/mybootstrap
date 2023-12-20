@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <img src="https://www.istockphoto.com/photo/barman-pouring-whiskey-in-front-of-whiskey-glass-and-bottles-gm501594918-81413675" class="img-fluid" alt="background">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 
-<body>
-     
-    <!--Nav-->
-        <nav class="navbar navbar-light navbar-expand-sm bg-light">
+    <body>
+        <div class="container-fluid navalert-container">
+                    <div class="container fluid alert-container">
+           <div class="row d-none d-sm-block">
+               <div class="col-12">
+                   <div class="site-wide-alert alert alert-warning">
+                       <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <!--Nav-->
+        <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">
                         Whiskey Drop</a>
     
@@ -42,40 +52,40 @@
             </div>
             <div class="d-none d-md-block">
                 <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
-                <a href="/login">Sign In / Sign Up</a>
+                <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
             </div>
             <!--</div>-->
         </nav>
-        <article class="container mt-3">
-            <div class="row d-none d-sm-block">
-                <div class="col-12">
-                    <div class="alert alert-warning">
-                        <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
-                    </div>
-                </div>
-            </div>
+        </div>
+
+        <div class="container-fluid callout-container">
             <!-- Callout -->
+            <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
                 <div class="col-12">
                     <section class="callout jumbotron text-center">
-                        <h1>The finest whiskeys delivered to your doorstep.</h1>
+                        <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                        <hr class="block-divider block-divider--orange">
                         <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
                             <s class="d-none d-sm-inline">€19.99</s>
                             <span class="d-inline d-sm-none"><br></span>
                             <strong><mark>First one is free!</mark></strong></p>
-                        <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                        <p><button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                         <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                     </section>
                 </div>
             </div>
-            <!-- /.callout -->
-            <hr>
-            <!-- Quotes -->
+        </div>
+        <!-- /.callout -->
+    
+        <!-- Quotes -->
+        <div class="container-wrapper"> 
+        <div class="container quotes-container content-container">
             <section class="quotes">
                 <div class="row">
-                    <div class="col-12 my-5">
+                    <div class="col-12 page-header">
                         <h2 class="text-uppercase">Quotes:</h2>
-                        <hr />
+                        <hr class="block-divider block-divider--short">
                     </div>
                 </div>
                 <div class="row">
@@ -107,43 +117,47 @@
                     </div>
                 </div>
             </section>
-            <!-- /.quotes -->
-            <hr>
-            <!-- Features -->
+        </div>
+        <!-- /.quotes -->
+    </div>
+        <!-- Features -->
+        <div class="container-wrapper container-wrapper--red">
+        <div class=" container features-container content-container">
             <section class="features">
                 <div class="row">
-                    <div class="col-12 my-5">
+                    <div class="col-12 page-header">
                         <h2 class="text-uppercase">Features:</h2>
-                        <hr />
+
+                        <hr class=" block-divider block-divider--short block-divider--white">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="feature">
-                            <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">New!</span></h3>
+                            <h3><i class="fas fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">New!</span></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="feature">
-                            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                            <h3><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                         </div>
                     </div>
                     <div class="col-12 d-md-none d-lg-block col-lg-4">
                         <div class="feature">
-                            <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
+                            <h3><i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- /.features -->
-        </article>
-        
+        </div>
+        <!-- /.features -->
+    </div>         
         <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -174,6 +188,8 @@
                 </div>
             </div>
         </div>
+     
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
